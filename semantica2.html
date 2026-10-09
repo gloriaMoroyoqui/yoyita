@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Servicios | Mi Sitio Web</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            color: #70445c;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8c8dc;
+            padding: 20px 30px;
+            border-bottom: 4px solid #e99abb;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #8d4267;
+            font-size: 28px;
+        }
+
+        .barra-navegacion {
+            margin-top: 15px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #d985ad;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(245, 148, 1);
+            color: #ffffff;
+        }
+
+        .boton-nav.activo {
+            background-color: #b95f8c;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .logo-pequeno {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            background-color: #ffe1ec;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 25px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #ffe0eb;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid #f3b5ce;
+        }
+
+        aside h3 {
+            color: #a44e78;
+            margin-top: 0;
+        }
+
+        aside p {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 20px;
+            border: 2px solid #f3c1d5;
+            box-shadow: 0 5px 15px #e9b7ca;
+        }
+
+        section h2 {
+            color: #c05c8b;
+            margin-top: 0;
+        }
+
+        section p {
+            line-height: 1.8;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #e99abb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .boton:hover {
+            background-color: #d77ca2;
+        }
+
+        footer {
+            background-color: #f8c8dc;
+            text-align: center;
+            padding: 20px;
+            color: #8d4267;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            main {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            aside,
+            section {
+                width: 100%;
+            }
+
+            .barra-navegacion {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+
+            <h1 style="margin: 0;">Mi Sitio Web</h1>
+
+            <nav class="barra-navegacion">
+
+                <a href="semantica.html" class="boton-nav">Inicio</a>
+
+                <a href="semantica2.html" class="boton-nav activo">Servicio</a>
+
+                <a href="semantica3.html" class="boton-nav">Contacto</a>
+
+            </nav>
+
+        </div>
+
+        <img src="imagen.png"
+             alt="Logo de Mi Sitio Web"
+             title="Logo de la marca"
+             class="logo-pequeno">
+
+    </header>
+
+    <main>
+
+        <aside>
+
+            <h3>Mis Servicios</h3>
+
+            <p>Conoce los servicios de mi página web.</p>
+
+            <a href="semantica.html" class="boton">Regresar</a>
+
+        </aside>
+
+        <section>
+
+            <article>
+
+                <h2>Servicios</h2>
+
+                <p>
+                    En esta sección puedes conocer
+                    los servicios que ofrecemos.
+                </p>
+
+                <p>
+                    Gracias por visitar mi página web.
+                </p>
+
+                <a href="semantica3.html" class="boton">Contacto</a>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Mi Sitio Web | Todos los derechos reservados</p>
+
+    </footer>
+
+</body>
+
+</html>
